@@ -1,27 +1,40 @@
 <html>
+
  <head>
- <title>Title of the document</title>
+ 
+ <title>Noah's website</title>
  <style>
- #defaultBlock {
- display: table;
+ *{
+  box-sizing: border-box;
+ body {
+ background-color: #6B7C4D; 
+  margin: 35px;
+ }
+ #defaultBlock::after {
+  content: "";
+  display: table;
+  clear: both;
 
  }
- div {
+ 
+#block1, #block2, #block3 {
  float: left;
- height: 470px;
- width: 300px;
- padding: 10px;
+ height: 700px;
+margin: 0px;
+ padding: 0px;
+ overflow: auto;
  }
  #block1 {
- background-color: 5AA670;
+ background-color: #C4724A;
+ width: 40%;
  }
  #block2 {
- background-color: 5A78A6;
- width: 250px;
+ background-color: #6B7C4D;
+ width: 20%;
  }
  #block3 {
- background-color: A65A62;
- width: 250px;
+ background-color: #8A5A7A;
+ width: 40%;
  }
  h2 {
  text-align: center;
@@ -29,20 +42,33 @@
  </style>
  </head>
  <body>
+ 
  <main id="defaultBlock">
- <h2>Main Page Title</h2>
+ <h2>That website with the cool clock</h2>
  <div id="block1">
- <h2>Title 1</h2>
- Random Text
+ <h2>Clock</h2>
+ This is called a clock.<BR>
+ Guess which amazing handsome muscular genious made this?<BR>
+ THIS GUYYYY
+ <BR>   
+ <div id="clock-container"></div><script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+ <script src="sketch.js"></script>
+ 
  </div>
  <div id="block2">
- <h2>Title 2</h2>
-content
+ <h2></h2>
+
  </div>
  <div id="block3">
- <h2>Title 3</h2>
- content
+ <h2>A nice comparasin to clocks made by some professional nerd</h2>
+<script src="https://cdn.commoninja.com/sdk/latest/commonninja.js" defer></script>
+<div class="commonninja_component pid-f67f613f-d540-4906-82be-88c7c0942bc3"></div>
  </div>
+ 
  </main>
+<!-- Elfsight Age Verification | Untitled Age Verification -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-97ebe57a-6f88-4cdc-995d-c4f20f2dc5af" data-elfsight-app-lazy></div>
  </body>
+ 
 </html>
